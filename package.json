@@ -4,6 +4,7 @@
   "description": "url-shortener",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "npm test"
   },
   "author": "antoooks",
@@ -14,7 +15,10 @@
   },
   "dependencies": {
     "cron": "^1.7.1",
+    "localStorage": "^1.0.4",
     "moment": "^2.24.0",
+    "mustache": "^3.0.1",
+    "mustache-express": "^1.2.8",
     "pg-promise": "^8.7.2"
   }
 }
