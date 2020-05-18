@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-
-        docker run --name pg-docker -d -e POSTGRES_USER=root -e POSTGRES_PASSWORD=docker -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
+docker run --name pg-docker -d -e POSTGRES_USER=root -e POSTGRES_PASSWORD=docker -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
