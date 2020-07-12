@@ -35,6 +35,12 @@
     text-align: center;
 }
 
+.short-url-container {
+    display: inline-block;
+    margin: 5% 0 0 15%;
+    width: 75%;
+}
+
 .short-url-container a {
     font-size: medium;
 }
