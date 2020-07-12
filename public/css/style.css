@@ -42,5 +42,8 @@
 }
 
 .short-url-container a {
-    font-size: medium;
+    font-size: large;
+    display: inline-block;
+    margin: 5% 0 0 15%;
+    width: 75%;
 }
