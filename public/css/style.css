@@ -2,11 +2,17 @@
     height: 100%;
 }
 
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -60px;
+}
+
 .main-content {
     object-fit: cover;
     background-image: url("../assets/img/129777.jpg");
     height: 0;
-    min-height: 1000px !important;
+    min-height: 300px !important;
 }
 
 .main-content input{
@@ -16,5 +22,15 @@
 .bottom-content {
     background-color: darksalmon;
     height: 0;
-    min-height: 1000px !important;
+    min-height: 500px !important;
+}
+
+.form-container {
+    display: inline-block;
+    margin: 5% 0 0 30%;
+    width: 75%;
+}
+
+#url {
+    text-align: center;
 }

@@ -17,21 +17,25 @@
         </nav>
         <div class="content">
             <div class="row">
-                <div class="col s12 main-content center-align">
-                    <p>Hello, world!</p>
-                    <form class="col s8 center-align" action="/shorten" method="post">
-                            <div class="row center-align">
-                              <div class="input-field col s12">
-                                {{#fullUrl.length}}
-                                <input id="url" type="text" class="validate" name="fullUrl" placeholder="{{fullUrl}}">
-                                {{/fullUrl.length}}
-                                {{^fullUrl.length}}
-                                <input id="url" type="text" class="validate" name="fullUrl" placeholder="Type in the url you want to shorten...">
-                                {{/fullUrl.length}}
-                                <button class="btn amber" type="submit" value="shorten!">shorten!</button>
-                              </div>
-                            </div>
-                    </form>
+                    <div class="col s12 main-content center-align">
+                        <div class="form-container">
+                            <form class="col s8 center-align" action="/shorten" method="post">
+                                <div class="row center-align">
+                                    <div class="input-field col s12">
+                                    {{#fullUrl.length}}
+                                    <input id="url" type="text" class="validate" name="fullUrl" placeholder="{{fullUrl}}">
+                                    {{/fullUrl.length}}
+                                    {{^fullUrl.length}}
+                                    <input id="url" type="text" class="validate" name="fullUrl" placeholder="Type in the url you want to shorten...">
+                                    {{/fullUrl.length}}
+
+                                    <button class="btn amber" type="submit" value="shorten!">shorten!</button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     <div class='col center-align'>
                         <h1>
                             {{#shortUrl.length}}
@@ -43,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col s12 bottom-content center-align">
-                    <p>This is bottom!</p>
+                    <!--<p>This is bottom!</p>-->
                     {{#urls.length}}
                     <div class="col s12">
                         <table>
