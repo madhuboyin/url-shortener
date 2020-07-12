@@ -36,14 +36,16 @@
                             </form>
                         </div>
                     </div>
-                    <div class='col center-align'>
-                        <h1>
-                            {{#shortUrl.length}}
-                                <a href="{{& fullUrl}}">
-                                    https://lurus.in/{{shortUrl}}
-                                </a>
-                            {{/shortUrl.length}}
-                        </h1>
+                    <div class="short-url-container">
+                        <div class='col center-align'>
+                            <h1>
+                                {{#shortUrl.length}}
+                                    <a href="{{& fullUrl}}">
+                                        https://lurus.in/{{shortUrl}}
+                                    </a>
+                                {{/shortUrl.length}}
+                            </h1>
+                        </div>
                     </div>
                 </div>
                 <div class="col s12 bottom-content center-align">

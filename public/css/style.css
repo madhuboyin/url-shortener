@@ -34,3 +34,7 @@
 #url {
     text-align: center;
 }
+
+.short-url-container a {
+    font-size: medium;
+}
